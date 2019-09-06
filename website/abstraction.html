@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <title> carobear </title>
+    </head>
+    <body>
+        <h1> creatures and abstraction by me, </h1>
+        <div class="jumbotron">
+            <img id= "caroline" src="caroline.png">
+        </div>
+        <nav class="navbar navbar-default navbar-expand-md navbar-custom">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a href= "caroweb.html"> home </a></li>
+                    <li><a href="aboutme.html"> aboutMe </a></li>
+                    <li><a href="creatures.html"> creatures </a></li> 
+                    <li class="active"><a href="abstraction.html"> abstraction </a></li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+        <div class= "row" id= "absbottom">
+            <div class= "col-sm-4">
+                <img id= "shape" src= "shape.png" style="width: 100%">
+                <div id="shapeModal" class="modal">
+                    <span class="close">×</span>
+                    <img class="modal-content" id="shape1">
+                </div>
+            </div>
+            <div class= "col-md-4">
+                <img id= "mess" src= "redmess.png" style="width: 100%">
+                <div id="messModal" class="modal">
+                    <span class="close">×</span>
+                    <img class="modal-content" id="mess1">
+                </div>
+            </div>
+            <div class="col-sm-4">  
+                <img id= "blocks" src= "abstract2.png" style="width: 100%">
+                <div id="blocksModal" class="modal">
+                    <span class="close">×</span>
+                    <img class="modal-content" id="blocks1">
+                </div>
+            </div>
+        </div>
+        
+         </section>
+        <script>
+            /* modal for shape */
+            var modal = document.getElementById('shapeModal');
+            var img = document.getElementById('shape');
+            var modalImg = document.getElementById("shape1");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+            /* modal for mess */
+            var modal = document.getElementById('messModal');
+            var img = document.getElementById('mess');
+            var modalImg = document.getElementById("mess1");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+            var span = document.getElementsByClassName("close")[1];
+
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+            
+            /* modal for blocks */
+            var modal = document.getElementById('blocksModal');
+            var img = document.getElementById('blocks');
+            var modalImg = document.getElementById("blocks1");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+            var span = document.getElementsByClassName("close")[2];
+
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
